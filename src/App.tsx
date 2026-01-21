@@ -70,36 +70,53 @@ function App() {
 
             const summary = await fetchSummary(eventId);
 
-            const homePlayers =
-              summary?.boxscore?.teams?.home?.players || {};
-            const awayPlayers =
-              summary?.boxscore?.teams?.away?.players || {};
+            // ESPN summary → boxscore → teams → players → statistics → athletes
+            const teams = summary?.boxscore?.teams || [];
 
-            const allPlayers = { ...homePlayers, ...awayPlayers };
+            for (const team of teams) {
+              const playerGroups = team.players || [];
 
-            // Aggregate stats into our master object
-            Object.values(allPlayers).forEach((p: any) => {
-              const name = `${p.person.firstName} ${p.person.lastName}`.toLowerCase();
-              const rawStats = p.stats || {};
+              for (const group of playerGroups) {
+                const statGroups = group.statistics || [];
 
-              // Map ESPN stat fields into your scoring fields
-              // (many of these keys vary by game & position, adjust as needed)
-              const statsMapped: any = {
-                passYards: rawStats.passYards,
-                rushYards: rawStats.rushYards,
-                recYards: rawStats.recYards,
-                receptions: rawStats.receptions,
-                passTD: rawStats.passTouchdowns,
-                rushTD: rawStats.rushTouchdowns,
-                recTD: rawStats.receivingTouchdowns,
-                interceptions: rawStats.interceptions,
-                fumbles: rawStats.fumblesRecovered,
-              };
+                for (const statGroup of statGroups) {
+                  const labels: string[] = statGroup.labels || [];
+                  const athletes = statGroup.athletes || [];
 
-              statsByName[name] = statsByName[name]
-                ? mergeStats(statsByName[name], statsMapped)
-                : statsMapped;
-            });
+                  for (const a of athletes) {
+                    const person = a.athlete;
+                    if (!person) continue;
+
+                    const name =
+                      `${person.firstName} ${person.lastName}`.toLowerCase();
+
+                    const values = a.stats || [];
+                    const rawStats: Record<string, number> = {};
+
+                    labels.forEach((label, idx) => {
+                      rawStats[label] = Number(values[idx]) || 0;
+                    });
+
+                    // Map ESPN labels → scoring fields
+                    const statsMapped = {
+                      passYards: rawStats["passingYards"],
+                      rushYards: rawStats["rushingYards"],
+                      recYards: rawStats["receivingYards"],
+                      receptions: rawStats["receptions"],
+                      passTD: rawStats["passingTouchdowns"],
+                      rushTD: rawStats["rushingTouchdowns"],
+                      recTD: rawStats["receivingTouchdowns"],
+                      interceptions: rawStats["interceptions"],
+                      fumbles: rawStats["fumblesLost"],
+                    };
+
+                    statsByName[name] = statsByName[name]
+                      ? mergeStats(statsByName[name], statsMapped)
+                      : statsMapped;
+                  }
+                }
+              }
+            }
           }
         } catch (e) {
           console.warn("ESPN data not available for dates:", dates, e);
