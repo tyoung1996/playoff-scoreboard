@@ -1,17 +1,17 @@
-export async function fetchStats(week: number) {
+const ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/football/nfl";
+
+// Fetch NFL scoreboard for a specific date range
+export async function fetchScoreboardByDates(dates: string) {
   const res = await fetch(
-    `https://api.sleeper.app/v1/stats/nfl/2025/${week}`
+    `${ESPN_BASE}/scoreboard?dates=${dates}`
   );
-  if (!res.ok) {
-    throw new Error("Failed to fetch Sleeper stats");
-  }
+  if (!res.ok) throw new Error("Failed to fetch ESPN scoreboard");
   return res.json();
 }
 
-export async function fetchPlayers() {
-  const res = await fetch("https://api.sleeper.app/v1/players/nfl");
-  if (!res.ok) {
-    throw new Error("Failed to fetch Sleeper players");
-  }
+// Fetch detailed summary (boxscore + stats) for one game
+export async function fetchSummary(eventId: string) {
+  const res = await fetch(`${ESPN_BASE}/summary?event=${eventId}`);
+  if (!res.ok) throw new Error("Failed to fetch ESPN game summary");
   return res.json();
 }

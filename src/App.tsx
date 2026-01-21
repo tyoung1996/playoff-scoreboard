@@ -1,63 +1,133 @@
+/**
+ * src/App.tsx
+ *
+ * Renders your playoff leaderboard using ESPN’s API
+ * and scoring rules from scorePlayer.
+ */
+
 import { useEffect, useState } from "react";
-import { fetchStats, fetchPlayers } from "./api";
+import { fetchScoreboardByDates, fetchSummary } from "./api";
+
+// Scoring engine (your existing logic)
+function scorePlayer(stats: any) {
+  if (!stats) return 0;
+
+  return (
+    (stats.passYards ?? 0) * (1 / 20) +
+    (stats.rushYards ?? 0) * (1 / 10) +
+    (stats.recYards ?? 0) * (1 / 10) +
+    (stats.receptions ?? 0) * 1 +
+    (stats.passTD ?? 0) * 6 +
+    (stats.rushTD ?? 0) * 6 +
+    (stats.recTD ?? 0) * 6 +
+    (stats.interceptions ?? 0) * -2 +
+    (stats.fumbles ?? 0) * -2
+  );
+}
+
+// Helper to merge stats from multiple games
+function mergeStats(a: any, b: any) {
+  const out: any = { ...a };
+  Object.keys(b || {}).forEach((key) => {
+    if (typeof b[key] === "number") {
+      out[key] = (out[key] || 0) + b[key];
+    }
+  });
+  return out;
+}
 
 function App() {
   const [scores, setScores] = useState<any[]>([]);
 
   useEffect(() => {
     async function load() {
+      // 1) Load picks.json
       const picks = await fetch(
         `${import.meta.env.BASE_URL}picks.json`
-      ).then(r => r.json());
+      ).then((r) => r.json());
 
-      const players = await fetchPlayers();
+      // 2) Date ranges covering playoff games (adjust if needed)
+      const playoffDateRanges = [
+        "20250113-20250114", // Wild Card
+        "20250118-20250118", // Divisional round
+        "20250125-20250125", // Conference championships
+        "20250202-20250202", // Super Bowl
+      ];
 
-      const nameToId: Record<string, string> = {};
-      Object.entries(players).forEach(([id, p]: any) => {
-        if (p?.full_name) {
-          nameToId[p.full_name.toLowerCase()] = id;
-        }
-      });
+      // Collect stats aggregated by player name
+      const statsByName: Record<string, any> = {};
 
-      // NFL playoff weeks on Sleeper are typically weeks 19–22
-      const playoffWeeks = [19, 20, 21, 22];
-
-      const statsById: Record<string, any> = {};
-
-      for (const week of playoffWeeks) {
+      for (const dates of playoffDateRanges) {
         try {
-          const weekStats = await fetchStats(week);
-          Object.entries(weekStats).forEach(([playerId, stat]) => {
-            const safeStat = stat as Record<string, number>;
-            statsById[playerId] = statsById[playerId]
-              ? { ...statsById[playerId], ...safeStat }
-              : safeStat;
-          });
+          // Fetch scoreboard for this range
+          const scoreboard = await fetchScoreboardByDates(dates);
+          const events = scoreboard.events || [];
+
+          // For each game, fetch summary (boxscore + players)
+          for (const event of events) {
+            const eventId = event.id?.toString();
+            if (!eventId) continue;
+
+            const summary = await fetchSummary(eventId);
+
+            const homePlayers =
+              summary?.boxscore?.teams?.home?.players || {};
+            const awayPlayers =
+              summary?.boxscore?.teams?.away?.players || {};
+
+            const allPlayers = { ...homePlayers, ...awayPlayers };
+
+            // Aggregate stats into our master object
+            Object.values(allPlayers).forEach((p: any) => {
+              const name = `${p.person.firstName} ${p.person.lastName}`.toLowerCase();
+              const rawStats = p.stats || {};
+
+              // Map ESPN stat fields into your scoring fields
+              // (many of these keys vary by game & position, adjust as needed)
+              const statsMapped: any = {
+                passYards: rawStats.passYards,
+                rushYards: rawStats.rushYards,
+                recYards: rawStats.recYards,
+                receptions: rawStats.receptions,
+                passTD: rawStats.passTouchdowns,
+                rushTD: rawStats.rushTouchdowns,
+                recTD: rawStats.receivingTouchdowns,
+                interceptions: rawStats.interceptions,
+                fumbles: rawStats.fumblesRecovered,
+              };
+
+              statsByName[name] = statsByName[name]
+                ? mergeStats(statsByName[name], statsMapped)
+                : statsMapped;
+            });
+          }
         } catch (e) {
-          console.warn(`Stats not available for week ${week}`);
+          console.warn("ESPN data not available for dates:", dates, e);
         }
       }
 
+      // 3) Compute leaderboard scores
       const results = picks.map((p: any) => {
         let total = 0;
         p.players.forEach((name: string) => {
-          const playerId = nameToId[name.toLowerCase()];
-          if (!playerId) return;
-          const playerStats = statsById[playerId];
-          total += scorePlayer(playerStats);
+          const stats = statsByName[name.toLowerCase()];
+          total += scorePlayer(stats);
         });
-
         return { user: p.user, total };
       });
 
+      // Sort descending
       setScores(results.sort((a, b) => b.total - a.total));
     }
 
+    // Kick off load
     load();
-    const interval = setInterval(load, 60000); // auto-refresh
+    // Optional auto-refresh
+    const interval = setInterval(load, 60000);
     return () => clearInterval(interval);
   }, []);
 
+  // Render
   return (
     <div style={{ padding: 20 }}>
       <h1>🏈 Playoff Leaderboard</h1>
