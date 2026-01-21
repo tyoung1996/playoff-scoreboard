@@ -1,0 +1,17 @@
+export const rules = {
+    passYards: 1 / 20,
+    rushYards: 1 / 10,
+    recYards: 1 / 10,
+    reception: 1,
+    passTD: 6,
+    rushTD: 6,
+    recTD: 6,
+    interception: -2,
+    fumble: -2,
+    fieldGoal: 3,
+    fg50: 5,
+    extraPoint: 1,
+    defenseTD: 6,
+    sack: 2,
+    shutout: 10,
+  };
