@@ -7,3 +7,11 @@ export async function fetchStats(week: number) {
   }
   return res.json();
 }
+
+export async function fetchPlayers() {
+  const res = await fetch("https://api.sleeper.app/v1/players/nfl");
+  if (!res.ok) {
+    throw new Error("Failed to fetch Sleeper players");
+  }
+  return res.json();
+}
