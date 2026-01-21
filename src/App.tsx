@@ -10,12 +10,29 @@ function App() {
       const picks = await fetch(
         `${import.meta.env.BASE_URL}picks.json`
       ).then(r => r.json());
-      const stats = await fetchStats();
+      // NFL playoff weeks on Sleeper are typically weeks 19–22
+      const playoffWeeks = [19, 20, 21, 22];
+
+      const statsById: Record<string, any> = {};
+
+      for (const week of playoffWeeks) {
+        try {
+          const weekStats = await fetchStats(week);
+          Object.entries(weekStats).forEach(([playerId, stat]) => {
+            const safeStat = stat as Record<string, number>;
+            statsById[playerId] = statsById[playerId]
+              ? { ...statsById[playerId], ...safeStat }
+              : safeStat;
+          });
+        } catch (e) {
+          console.warn(`Stats not available for week ${week}`);
+        }
+      }
 
       const results = picks.map((p: any) => {
         let total = 0;
-        p.players.forEach((name: string) => {
-          const playerStats = stats[name];
+        p.players.forEach((playerId: string) => {
+          const playerStats = statsById[playerId];
           total += scorePlayer(playerStats);
         });
 
