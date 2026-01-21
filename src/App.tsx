@@ -7,7 +7,9 @@ function App() {
 
   useEffect(() => {
     async function load() {
-      const picks = await fetch("/picks.json").then(r => r.json());
+      const picks = await fetch(
+        `${import.meta.env.BASE_URL}picks.json`
+      ).then(r => r.json());
       const stats = await fetchStats();
 
       const results = picks.map((p: any) => {
