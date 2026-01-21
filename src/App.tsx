@@ -122,7 +122,7 @@ function App() {
           console.warn("ESPN data not available for dates:", dates, e);
         }
       }
-
+console.log(statsByName)
       // 3) Compute leaderboard scores
       const results = picks.map((p: any) => {
         let total = 0;
