@@ -1,30 +1,1206 @@
 [
-    {
-      "user": "Tyler Young",
-      "players": [
-        "Trevor Lawrence",
-        "Zach Charbonnet",
-        "Bhayshul Tuten",
-        "Jaxon Smith-Njigba",
-        "Brian Thomas",
-        "Parker Washington",
-        "Brenton Strange",
-        "Jason Myers",
-        "Seahawks"
-      ]
-    },
-    {
-      "user": "Emilie",
-      "players": [
-        "Drake Maye",
-        "Kenneth Walker",
-        "Rhamondre Stevenson",
-        "Rashid Shaheed",
-        "Cooper Kupp",
-        "DeMario Douglas",
-        "AJ Barner",
-        "Andy Borregales",
-        "Seahawks"
-      ]
-    }
-  ]
+  {
+    "user": "Rob Orr",
+    "players": [
+      {"name": "Aaron Rodgers", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Jaylen Warren", "position": "RB"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "DK Metcalf", "position": "WR"},
+      {"name": "Adam Thielen", "position": "WR"},
+      {"name": "Pat Freiermuth", "position": "TE"},
+      {"name": "Chris Boswell", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Jack Peters",
+    "players": [
+      {"name": "Aaron Rodgers", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "Kenneth Gainwell", "position": "RB"},
+      {"name": "AJ Brown", "position": "WR"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Calvin Austin", "position": "WR"},
+      {"name": "Pat Freiermuth", "position": "TE"},
+      {"name": "Chris Boswell", "position": "K"},
+      {"name": "Steelers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Robyn Harris",
+    "players": [
+      {"name": "Bo Nix", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "RJ Harvey", "position": "RB"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Marvin Mims", "position": "WR"},
+      {"name": "Jahan Dotson", "position": "WR"},
+      {"name": "Dallas Goedert", "position": "TE"},
+      {"name": "Brandon McManus", "position": "K"},
+      {"name": "Broncos", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Jack Haefner",
+    "players": [
+      {"name": "Brock Purdy", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Christian Watson", "position": "WR"},
+      {"name": "Brandin Cooks", "position": "WR"},
+      {"name": "AJ Barner", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Ben Schatz",
+    "players": [
+      {"name": "Brock Purdy", "position": "QB"},
+      {"name": "Christian McCaffrey", "position": "RB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Jauan Jennings", "position": "WR"},
+      {"name": "Kendrick Bourne", "position": "WR"},
+      {"name": "Demarcus Robinson", "position": "WR"},
+      {"name": "George Kittle", "position": "TE"},
+      {"name": "Eddy Pineiro", "position": "K"},
+      {"name": "49ers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Kris Harris",
+    "players": [
+      {"name": "Brock Purdy", "position": "QB"},
+      {"name": "Christian McCaffrey", "position": "RB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Ricky Pearsall", "position": "WR"},
+      {"name": "Demarcus Robinson", "position": "WR"},
+      {"name": "Efton Chism", "position": "WR"},
+      {"name": "George Kittle", "position": "TE"},
+      {"name": "Eddy Pineiro", "position": "K"},
+      {"name": "Patriots", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Blake Kuntz",
+    "players": [
+      {"name": "Brock Purdy", "position": "QB"},
+      {"name": "Christian McCaffrey", "position": "RB"},
+      {"name": "RJ Harvey", "position": "RB"},
+      {"name": "Jauan Jennings", "position": "WR"},
+      {"name": "Pat Bryant", "position": "WR"},
+      {"name": "Troy Franklin", "position": "WR"},
+      {"name": "George Kittle", "position": "TE"},
+      {"name": "Eddy Pineiro", "position": "K"},
+      {"name": "49ers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Anna W",
+    "players": [
+      {"name": "Caleb Williams", "position": "QB"},
+      {"name": "Kyle Monangai", "position": "RB"},
+      {"name": "Ray Davis", "position": "RB"},
+      {"name": "Khalil Shakir", "position": "WR"},
+      {"name": "DJ Moore", "position": "WR"},
+      {"name": "Gabe Davis", "position": "WR"},
+      {"name": "Colston Loveland", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Bears", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Mike Clements",
+    "players": [
+      {"name": "CJ Stroud", "position": "QB"},
+      {"name": "Woody Marks", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Nico Collins", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "AJ Barner", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Jaguars", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Robbie Riordan 2",
+    "players": [
+      {"name": "CJ Stroud", "position": "QB"},
+      {"name": "Travis Etienne", "position": "RB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Nico Collins", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "DeMario Douglas", "position": "WR"},
+      {"name": "Dalton Schultz", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Jaguars", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Bray Bray the Man Man",
+    "players": [
+      {"name": "CJ Stroud", "position": "QB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Nick Chubb", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Nico Collins", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Dalton Schultz", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Texans", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Alan Mclaughlin 1",
+    "players": [
+      {"name": "CJ Stroud", "position": "QB"},
+      {"name": "Christian McCaffrey", "position": "RB"},
+      {"name": "Woody Marks", "position": "RB"},
+      {"name": "Nico Collins", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Christian Kirk", "position": "WR"},
+      {"name": "George Kittle", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "Texans", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Emilie",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "Kenneth Walker", "position": "RB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "Rashid Shaheed", "position": "WR"},
+      {"name": "Cooper Kupp", "position": "WR"},
+      {"name": "DeMario Douglas", "position": "WR"},
+      {"name": "AJ Barner", "position": "TE"},
+      {"name": "Andy Borregales", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Miles",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Kayshon Boutte", "position": "WR"},
+      {"name": "Jordan Whittington", "position": "WR"},
+      {"name": "Colby Parkinson", "position": "TE"},
+      {"name": "Andy Borregales", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Ryan Snyder",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Kayshon Boutte", "position": "WR"},
+      {"name": "Jahan Dotson", "position": "WR"},
+      {"name": "Efton Chism", "position": "WR"},
+      {"name": "Dallas Goedert", "position": "TE"},
+      {"name": "Brandon McManus", "position": "K"},
+      {"name": "Eagles", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "CB Truth 2",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Kyle Monangai", "position": "RB"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Rashid Shaheed", "position": "WR"},
+      {"name": "Joshua Palmer", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Ryan Fitzgerald", "position": "K"},
+      {"name": "Bears", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Robbie Riordan",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "Cooper Kupp", "position": "WR"},
+      {"name": "Kayshon Boutte", "position": "WR"},
+      {"name": "DeMario Douglas", "position": "WR"},
+      {"name": "Hunter Henry", "position": "TE"},
+      {"name": "Andy Borregales", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Paul Snopek 2",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "Stefon Diggs", "position": "WR"},
+      {"name": "DeMario Douglas", "position": "WR"},
+      {"name": "Kendrick Bourne", "position": "WR"},
+      {"name": "Hunter Henry", "position": "TE"},
+      {"name": "Andy Borregales", "position": "K"},
+      {"name": "Niners", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Erik2",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "Stefon Diggs", "position": "WR"},
+      {"name": "Efton Chism", "position": "WR"},
+      {"name": "Kyle Williams", "position": "WR"},
+      {"name": "Hunter Henry", "position": "TE"},
+      {"name": "Andy Borregales", "position": "K"},
+      {"name": "Patriots", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Micah 2",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Keon Coleman", "position": "WR"},
+      {"name": "Brandin Cooks", "position": "WR"},
+      {"name": "Jake Tonges", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Henry Kovach",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "Stefon Diggs", "position": "WR"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Jahan Dotson", "position": "WR"},
+      {"name": "Jonnu Smith", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Eagles", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "JEFF2",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "LeQuint Allen", "position": "RB"},
+      {"name": "DK Metcalf", "position": "WR"},
+      {"name": "Jakobi Meyers", "position": "WR"},
+      {"name": "Calvin Austin", "position": "WR"},
+      {"name": "Orande Gadsden", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Topher Robinson",
+    "players": [
+      {"name": "Drake Maye", "position": "QB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Nick Chubb", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Devante Adams", "position": "WR"},
+      {"name": "Efton Chism", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Andy Borregales", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "MPG2",
+    "players": [
+      {"name": "Jalen Hurts", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "Tank Bigsby", "position": "RB"},
+      {"name": "AJ Brown", "position": "WR"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Jahan Dotson", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "Eagles", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Jasmine",
+    "players": [
+      {"name": "Jalen Hurts", "position": "QB"},
+      {"name": "D'Andre Swift", "position": "RB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "AJ Brown", "position": "WR"},
+      {"name": "Khalil Shakir", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Jonnu Smith", "position": "TE"},
+      {"name": "Jake Elliot", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Blake C",
+    "players": [
+      {"name": "Jalen Hurts", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Ty Johnson", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Chris Boswell", "position": "K"},
+      {"name": "Eagles", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Kris 2",
+    "players": [
+      {"name": "Jordan Love", "position": "QB"},
+      {"name": "Josh Jacobs", "position": "RB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Romeo Doubs", "position": "WR"},
+      {"name": "Christian Watson", "position": "WR"},
+      {"name": "Efton Chism", "position": "WR"},
+      {"name": "Hunter Henry", "position": "TE"},
+      {"name": "Brandon McManus", "position": "K"},
+      {"name": "Packers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Katie Snyder",
+    "players": [
+      {"name": "Jordan Love", "position": "QB"},
+      {"name": "Josh Jacobs", "position": "RB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Stefon Diggs", "position": "WR"},
+      {"name": "Christian Watson", "position": "WR"},
+      {"name": "Efton Chism", "position": "WR"},
+      {"name": "Luke Musgrave", "position": "TE"},
+      {"name": "Brandon McManus", "position": "K"},
+      {"name": "Patriots", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Brydon R",
+    "players": [
+      {"name": "Jordan Love", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Stefon Diggs", "position": "WR"},
+      {"name": "Jauan Jennings", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Eddy Pineiro", "position": "K"},
+      {"name": "Steelers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Spencer Klein",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Ty Johnson", "position": "RB"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Gabe Davis", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Dalton Kincaid", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Derek Peters",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "Ty Johnson", "position": "RB"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Jahan Dotson", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Dalton Kincaid", "position": "TE"},
+      {"name": "Matt Prater", "position": "K"},
+      {"name": "Eagles", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Pat & JT 1",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Ray Davis", "position": "RB"},
+      {"name": "Khalil Shakir", "position": "WR"},
+      {"name": "Joshua Palmer", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Dalton Kincaid", "position": "TE"},
+      {"name": "Matt Prater", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Chuck Kovach",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "Ty Johnson", "position": "RB"},
+      {"name": "AJ Brown", "position": "WR"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Eagles", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Blake 2",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Jason Myers", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Joan Peters",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "Ray Davis", "position": "RB"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Keon Coleman", "position": "WR"},
+      {"name": "Gabe Davis", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Jake Elliot", "position": "K"},
+      {"name": "Eagles", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Erik1",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Ray Davis", "position": "RB"},
+      {"name": "Khalil Shakir", "position": "WR"},
+      {"name": "Keon Coleman", "position": "WR"},
+      {"name": "Gabe Davis", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Matt Prater", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Kevin Klein 2",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "Ty Johnson", "position": "RB"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Rashid Shaheed", "position": "WR"},
+      {"name": "Gabe Davis", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Mike Clements 2",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Jake Bobo", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "Texans", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Adam Hurly",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Ray Davis", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Gabe Davis", "position": "WR"},
+      {"name": "Joshua Palmer", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Micah Cross",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "Christian McCaffrey", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "Pat Bryant", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Eddy Pineiro", "position": "K"},
+      {"name": "Bears", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Bdubs1",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "Troy Franklin", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Alan Mclaughlin 2",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "Christian McCaffrey", "position": "RB"},
+      {"name": "Brian Robinson", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Demarcus Robinson", "position": "WR"},
+      {"name": "George Kittle", "position": "TE"},
+      {"name": "Eddy Pineiro", "position": "K"},
+      {"name": "49ers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Lisa Schatz",
+    "players": [
+      {"name": "Josh Allen", "position": "QB"},
+      {"name": "Christian McCaffrey", "position": "RB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Ricky Pearsall", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Demarcus Robinson", "position": "WR"},
+      {"name": "George Kittle", "position": "TE"},
+      {"name": "Eddy Pineiro", "position": "K"},
+      {"name": "49ers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Pat & JT 2",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Jaleel McLaughlin", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Courtland Sutton", "position": "WR"},
+      {"name": "Xavier Smith", "position": "WR"},
+      {"name": "Adam Trautman", "position": "TE"},
+      {"name": "Wil Lutz", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Jim Petch Balls",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Devante Adams", "position": "WR"},
+      {"name": "Efton Chism", "position": "WR"},
+      {"name": "Austin Hooper", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Spencer Klein 2",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "Ronnie Rivers", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Jordan Whittington", "position": "WR"},
+      {"name": "Colby Parkinson", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Josh Dennie",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "Jawhar Jordan", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Mack Hollins", "position": "WR"},
+      {"name": "Colby Parkinson", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Anthony W",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "RJ Harvey", "position": "RB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Pat Bryant", "position": "WR"},
+      {"name": "Troy Franklin", "position": "WR"},
+      {"name": "Colby Parkinson", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Bob Martin",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "TuTu Atwell", "position": "WR"},
+      {"name": "Colby Parkinson", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "CB Truth",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Ricky Pearsall", "position": "WR"},
+      {"name": "DeMario Douglas", "position": "WR"},
+      {"name": "Cole Kmet", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Mommy Young",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Ronnie Rivers", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Joshua Palmer", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Dalton Kincaid", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Kevin Klein 1",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Kenneth Walker", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "DeMario Douglas", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Dawson Knox", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Chris Jeffrey",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Jawhar Jordan", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Troy Franklin", "position": "WR"},
+      {"name": "Hunter Henry", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "Texans", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Jeff Smith",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Rashid Shaheed", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Terrance Ferguson", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Dalton Moore",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Ray Davis", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Keon Coleman", "position": "WR"},
+      {"name": "Gabe Davis", "position": "WR"},
+      {"name": "Terrance Ferguson", "position": "TE"},
+      {"name": "Matt Prater", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Matt Moore",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Ronnie Rivers", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Jordan Whittington", "position": "WR"},
+      {"name": "Terrance Ferguson", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Cbass 1",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Ty Johnson", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Keon Coleman", "position": "WR"},
+      {"name": "Terrance Ferguson", "position": "TE"},
+      {"name": "Brandon McManus", "position": "K"},
+      {"name": "49ers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Jerry Storz",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "RJ Harvey", "position": "RB"},
+      {"name": "Woody Marks", "position": "RB"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "Pat Bryant", "position": "WR"},
+      {"name": "Terrance Ferguson", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Broncos", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Gray Kraynak",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Kenneth Gainwell", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "DK Metcalf", "position": "WR"},
+      {"name": "Adam Thielen", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Steelers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Felix - Ol Reliable",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Joey Roebuck Jr.",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Keon Coleman", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Matt Stephens",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Khalil Shakir", "position": "WR"},
+      {"name": "Brandon Cooks", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Rags",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Dontayvion Wicks", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Steelers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Tom Starin 1",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Stefon Diggs", "position": "WR"},
+      {"name": "Efton Chism", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "Jaguars", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Allen's Last Stand",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "49ers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Dutchman",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Woody Marks", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Xavier Hutchinson", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Harrison Mevis", "position": "K"},
+      {"name": "Texans", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "MPG1",
+    "players": [
+      {"name": "Matthew Stafford", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Blake Corum", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Xavier Smith", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Brandon McManus", "position": "K"},
+      {"name": "Bills", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Seth Howard",
+    "players": [
+      {"name": "Sam Darnold", "position": "QB"},
+      {"name": "RJ Harvey", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Courtland Sutton", "position": "WR"},
+      {"name": "Marvin Mims", "position": "WR"},
+      {"name": "Adam Trautman", "position": "TE"},
+      {"name": "Wil Lutz", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Lucas Schatz",
+    "players": [
+      {"name": "Sam Darnold", "position": "QB"},
+      {"name": "Kenneth Walker", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Cooper Kupp", "position": "WR"},
+      {"name": "Dyami Brown", "position": "WR"},
+      {"name": "AJ Barner", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Bob Martin 2",
+    "players": [
+      {"name": "Sam Darnold", "position": "QB"},
+      {"name": "Kenneth Walker", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "DeMario Douglas", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "AJ Barner", "position": "TE"},
+      {"name": "Jason Myers", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Luke W",
+    "players": [
+      {"name": "Sam Darnold", "position": "QB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "DeMario Douglas", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "AJ Barner", "position": "TE"},
+      {"name": "Andy Borregales", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Aidan 2",
+    "players": [
+      {"name": "Sam Darnold", "position": "QB"},
+      {"name": "Kenneth Walker", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Cooper Kupp", "position": "WR"},
+      {"name": "Pat Bryant", "position": "WR"},
+      {"name": "AJ Barner", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Tyson Schmidt",
+    "players": [
+      {"name": "Sam Darnold", "position": "QB"},
+      {"name": "Kenneth Walker", "position": "RB"},
+      {"name": "Rico Dowdle", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Jakobi Meyers", "position": "WR"},
+      {"name": "Tim Patrick", "position": "WR"},
+      {"name": "AJ Barner", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Bdubs2",
+    "players": [
+      {"name": "Sam Darnold", "position": "QB"},
+      {"name": "TreVeyon Henderson", "position": "RB"},
+      {"name": "Kenneth Walker", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Kendrick Bourne", "position": "WR"},
+      {"name": "Troy Franklin", "position": "WR"},
+      {"name": "AJ Barner", "position": "TE"},
+      {"name": "Andy Borregales", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Paul Snopek 1",
+    "players": [
+      {"name": "Sam Darnold", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Nick Chubb", "position": "RB"},
+      {"name": "Davante Adams", "position": "WR"},
+      {"name": "Keon Coleman", "position": "WR"},
+      {"name": "DeMario Douglas", "position": "WR"},
+      {"name": "Dalton Kincaid", "position": "TE"},
+      {"name": "Ka'imi Fairbairn", "position": "K"},
+      {"name": "Texans", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "JEFF1",
+    "players": [
+      {"name": "Sam Darnold", "position": "QB"},
+      {"name": "Kenneth Walker", "position": "RB"},
+      {"name": "Kyle Monangai", "position": "RB"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Rome Odunze", "position": "WR"},
+      {"name": "Ricky Pearsall", "position": "WR"},
+      {"name": "Ja'Tavion Sanders", "position": "TE"},
+      {"name": "Ryan Fitzgerald", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Cbass 2",
+    "players": [
+      {"name": "Sam Darnold", "position": "QB"},
+      {"name": "Josh Jacobs", "position": "RB"},
+      {"name": "Woody Marks", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Nico Collins", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Terrance Ferguson", "position": "TE"},
+      {"name": "Brandon McManus", "position": "K"},
+      {"name": "Packers", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Tom Starin 2",
+    "players": [
+      {"name": "Trevor Lawrence", "position": "QB"},
+      {"name": "Travis Etienne", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "AJ Barner", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Parker Washington Can't Lose",
+    "players": [
+      {"name": "Trevor Lawrence", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Travis Etienne", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "Calvin Austin", "position": "WR"},
+      {"name": "Brenton Strange", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Jaguars", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Erin Kovach",
+    "players": [
+      {"name": "Trevor Lawrence", "position": "QB"},
+      {"name": "Travis Etienne", "position": "RB"},
+      {"name": "Bhayshul Tuten", "position": "RB"},
+      {"name": "Jakobi Meyers", "position": "WR"},
+      {"name": "Brian Thomas", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "Brenton Strange", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Jaguars", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Tyler Young",
+    "players": [
+      {"name": "Trevor Lawrence", "position": "QB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Bhayshul Tuten", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Brian Thomas", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "Brenton Strange", "position": "TE"},
+      {"name": "Jason Myers", "position": "K"},
+      {"name": "Seahawks", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Aidan Milburn 1",
+    "players": [
+      {"name": "Trevor Lawrence", "position": "QB"},
+      {"name": "Kenneth Walker", "position": "RB"},
+      {"name": "Zach Charbonnet", "position": "RB"},
+      {"name": "Jaxon Smith-Njigba", "position": "WR"},
+      {"name": "Brian Thomas", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "Brenton Strange", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Jaguars", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Chris O",
+    "players": [
+      {"name": "Trevor Lawrence", "position": "QB"},
+      {"name": "James Cook", "position": "RB"},
+      {"name": "Rhamondre Stevenson", "position": "RB"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Kayshon Boutte", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "Colby Parkinson", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Texans", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Bo Peep",
+    "players": [
+      {"name": "Trevor Lawrence", "position": "QB"},
+      {"name": "Travis Etienne", "position": "RB"},
+      {"name": "D'Andre Swift", "position": "RB"},
+      {"name": "DJ Moore", "position": "WR"},
+      {"name": "Jakobi Meyers", "position": "WR"},
+      {"name": "Parker Washington", "position": "WR"},
+      {"name": "Cole Kmet", "position": "TE"},
+      {"name": "Cairo Santos", "position": "K"},
+      {"name": "Jaguars", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Max Kovach",
+    "players": [
+      {"name": "Trevor Lawrence", "position": "QB"},
+      {"name": "Saquan Barkley", "position": "RB"},
+      {"name": "Tank Bigsby", "position": "RB"},
+      {"name": "AJ Brown", "position": "WR"},
+      {"name": "DeVonta Smith", "position": "WR"},
+      {"name": "Brian Thomas", "position": "WR"},
+      {"name": "Grant Calceterra", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Eagles", "position": "DEF"}
+    ]
+  },
+  {
+    "user": "Felix 2",
+    "players": [
+      {"name": "Trevor Lawrence", "position": "QB"},
+      {"name": "Kyren Williams", "position": "RB"},
+      {"name": "Travis Etienne", "position": "RB"},
+      {"name": "Puka Nacua", "position": "WR"},
+      {"name": "Jakobi Meyers", "position": "WR"},
+      {"name": "Jayden Higgins", "position": "WR"},
+      {"name": "Tyler Higbee", "position": "TE"},
+      {"name": "Cam Little", "position": "K"},
+      {"name": "Rams", "position": "DEF"}
+    ]
+  }
+]
